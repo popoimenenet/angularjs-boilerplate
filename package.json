@@ -1,0 +1,14 @@
+{
+  "name": "angularjs-boilerplate",
+  "version": "1.0.0",
+  "description": "Boiletplate for AngularJS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Popoi Menenet",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}

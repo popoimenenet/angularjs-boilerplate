@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- AngularJS application -->
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/angular-ui-router.min.js"></script>
+
+
+		<!-- AngularJS Project File -->
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Bootstraping angular application here -->
+		<div ng-app="app" class="container-fluid">
+			
+			<!-- our layout is side navigation on left pane, and content view on the right pane -->
+			<div class="row">
+				
+				<!-- side nav -->
+				<div class="col-md-2" ng-controller1="route-controller" style="background-color:#2d2d2d;color:white;height: 100vh;">
+					<ul>
+						<li>
+							<a ui-sref="view1">View 1</a>
+						</li>
+						<li>
+							<a ui-sref="view2">View 2</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Content container -->
+				<div class="col-md-10">
+					<div ui-view class="container"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
